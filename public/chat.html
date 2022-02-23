@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light mb-1">
+        <a class="navbar-brand" href="/"
+          ><img src="i/beetroot_academy.svg"
+        /></a>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="playList.html">Play list</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="panel.html">Panel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="todos.html">Todos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="chat.html">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="players.html">Players</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="container">
+      <h1>Online chat</h1>
+
+      <div class="card mb-5">
+        <section id="messages" class="card-block"></section>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <form class="form-inline" name="newMessage">
+            <fieldset name="fields">
+              <input
+                type="text"
+                class="form-control"
+                name="message"
+                placeholder="Type a new message"
+              />
+              <button type="submit" class="btn btn-primary">
+                Say something
+              </button>
+            </fieldset>
+          </form>
+
+          <select id="status" name="status" class="custom-select">
+            <option value="online">Online</option>
+            <option value="away">Away</option>
+            <option value="busy">Busy</option>
+            <option value="offline">Offline</option>
+          </select>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <script src="js/chat.js"></script>
+  </body>
+</html>

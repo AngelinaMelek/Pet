@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lab 2 - Play list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="/"
+          ><img src="i/beetroot_academy.svg"
+        /></a>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Index</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="playList.html">Play List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="panel.html">Panel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="todos.html">Todos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chat.html">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="players.html">Players</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container pt-5">
+      <div class="col-sm-12 col-md-10 offset-md-1">
+        <div class="row">
+          <h2 class="col-sm-12 text-white text-center p3 bg-info mb-0">
+            Play list
+          </h2>
+        </div>
+
+        <!-- Songs here  -->
+        <div id="list" class="list">
+          <div class="row py-3 current">
+            <div class="col-sm-9">Yellow submarine - Beatles</div>
+            <div class="col-sm-3">04:33</div>
+          </div>
+          <div class="row py-3">
+            <div class="col-sm-9">There're must be an angel - Eurythmics</div>
+            <div class="col-sm-3">06:03</div>
+          </div>
+        </div>
+        <!-- End Songs here  -->
+
+        <div class="row">
+          <div class="col-sm-12 bg-light">
+            <div id="btn-player" class="button-group text-center py-3">
+              <button id="btn-play" class="btn btn-primary btn-lg mr-5">
+                Play
+              </button>
+              <button id="btn-next" class="btn btn-info btn-lg mr-5">
+                Next
+              </button>
+              <button id="btn-stop" class="btn btn-success btn-lg">Stop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/playlist.js"></script>
+  </body>
+</html>

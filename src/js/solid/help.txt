@@ -1,0 +1,20 @@
+================ Install TS ========================
+npm i typescript awesome-typescript-loader  ts-node 
+
+---webpack 
+{ 
+    test: /\.ts$/, 
+    use: "awesome-typescript-loader" 
+}
+
+--- init 
+npx tsc --init
+////  --------------------------------------- tsconfig.json
+{
+    target": "esnext",
+    allowJs": true 
+}
+--------------------------------------------- ////
+
+--run 
+npx ts-node TARGET
